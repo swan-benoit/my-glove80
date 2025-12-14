@@ -402,10 +402,34 @@ macros {
       bindings = <&kp EQUAL>, <&kp LS(EQUAL)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
-    grave_tilde: grave_tilde{
+    grave_tilde: grave_tilde {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&kp RA(N7)>, <&kp RA(N2)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    comma_inferior: comma_inferior {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp M>, <&kp NON_US_BSLH>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    dot_superior: dot_superior {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp LS(COMMA)>, <&kp LS(NON_US_BSLH)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    minus_under: minus_under {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp N6>, <&kp N8>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    semicolon_colon: semicolon_colon {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp COMMA>, <&kp DOT>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
@@ -444,9 +468,9 @@ macros {
         &kp F1    &kp F2     &kp F3       &kp F4        &kp F5                                                                                               &kp F6       &kp F7       &kp F8       &kp F9        &kp F10
         &kp RGUI  &one_exl    &two_at  &three_hash  &four_dollar  &five_percent                                                                 &six_circ  &seven_and  &eight_star  &nine_o_par  &zero_c_par         &minus_equal
         &slash_pipe    &kp N2      &kp Y        &kp O         &kp Z          &kp B                                                                     &kp F       &kp G        &kp H        &kp C        &kp X         &kp N9
-        &equal_plus     &kp Q      &kp I        &kp E         &kp U          &kp M                                                                  &kp SEMI       &kp S        &kp N        &kp T        &kp R          &kp W
-        &grave_tilde     &kp E     &kp N2       &kp N0         &kp J  &kp LS(COMMA)   &kp DEL  &kp LALT  &kp LSHFT  &kp RSHFT  &kp RALT    &kp ESC      &kp V       &kp D        &kp L        &kp P  &kp LS(DOT)     &kp RA(N4)
-        &magic LAYER_Magic 0    &kp N6  &kp COMMA        &kp A         &kp K                 &kp BSPC   &kp TAB  &kp LCTRL  &kp RCTRL   &kp RET  &kp SPACE               &kp LEFT     &kp DOWN       &kp UP    &kp RIGHT  &kp RA(EQUAL)
+        &equal_plus     &kp Q      &kp I        &kp E         &kp U          &comma_inferior                                                                  &kp SEMI       &kp S        &kp N        &kp T        &kp R          &kp W
+        &grave_tilde     &kp E     &kp N2       &kp N0         &kp J  &dot_superior   &kp DEL  &kp LALT  &kp LSHFT  &kp RSHFT  &kp RALT    &kp ESC      &kp V       &kp D        &kp L        &kp P  &kp LS(DOT)     &kp RA(N4)
+        &magic LAYER_Magic 0    &minus_under  &semicolon_colon        &kp A         &kp K                 &kp BSPC   &kp TAB  &kp LCTRL  &kp RCTRL   &kp RET  &kp SPACE               &kp LEFT     &kp DOWN       &kp UP    &kp RIGHT  &kp RA(EQUAL)
       >;
     };
 
