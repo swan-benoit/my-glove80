@@ -465,12 +465,12 @@ macros {
 
     layer_Base {
       bindings = <
-        &kp F1    &kp F2     &kp F3       &kp F4        &kp F5                                                                                               &kp F6       &kp F7       &kp F8       &kp F9        &kp F10
-        &kp RGUI  &one_exl    &two_at  &three_hash  &four_dollar  &five_percent                                                                 &six_circ  &seven_and  &eight_star  &nine_o_par  &zero_c_par         &minus_equal
-        &slash_pipe    &kp N2      &kp Y        &kp O         &kp Z          &kp B                                                                     &kp F       &kp G        &kp H        &kp C        &kp X         &kp N9
-        &equal_plus     &kp Q      &kp I        &kp E         &kp U          &comma_inferior                                                                  &kp SEMI       &kp S        &kp N        &kp T        &kp R          &kp W
-        &grave_tilde     &kp E     &kp N2       &kp N0         &kp J  &dot_superior   &kp DEL  &kp LALT  &kp LSHFT  &kp RSHFT  &kp RALT    &kp ESC      &kp V       &kp D        &kp L        &kp P  &kp LS(DOT)     &kp RA(N4)
-        &magic LAYER_Magic 0    &minus_under  &semicolon_colon        &kp A         &kp K                 &kp BSPC   &kp TAB  &kp LCTRL  &kp RCTRL   &kp RET  &kp SPACE               &kp LEFT     &kp DOWN       &kp UP    &kp RIGHT  &kp RA(EQUAL)
+        &kp F1         &kp F2    &kp F3        &kp F4            &kp F5                                                                                               &kp F6       &kp F7       &kp F8       &kp F9        &kp F10
+        &kp RGUI       &one_exl  &two_at       &three_hash       &four_dollar  &five_percent                                                                 &six_circ  &seven_and  &eight_star  &nine_o_par  &zero_c_par         &minus_equal
+        &slash_pipe    &kp N2    &kp Y         &kp O             &kp Z          &kp B                                                                     &kp F       &kp G        &kp H        &kp C        &kp X         &kp N9
+        &equal_plus    &kp Q     &kp I         &kp E             &kp U          &comma_inferior                                                                  &kp SEMI       &kp S        &kp N        &kp T        &kp R          &kp W
+        &grave_tilde   &kp E     &kp N2        &kp N0            &kp J  &dot_superior   &kp DEL  &kp LALT  &kp LSHFT  &kp RSHFT  &kp RALT    &kp ESC      &kp V       &kp D        &kp L        &kp P  &kp LS(DOT)     &kp RA(N4)
+        &magic LAYER_Magic 0     &minus_under  &semicolon_colon        &kp A         &kp K                 &kp BSPC   &kp TAB  &kp LCTRL  &kp RCTRL   &kp RET  &kp SPACE               &kp LEFT     &kp DOWN       &kp UP    &kp RIGHT  &kp RA(EQUAL)
       >;
     };
 
